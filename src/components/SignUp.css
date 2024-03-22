@@ -1,0 +1,88 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  .signup-form-container {
+    width: 400px;
+   
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #f9f9f9;
+  }
+  
+  .signup-form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .signup-form-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .social-logins {
+    margin-bottom: 20px;
+  }
+  
+  /* Add additional CSS for styling GoogleLogin and FacebookLogin components as needed */
+  
+  .login-prompt {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-prompt a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* General form input styles */
+.signup-form-container input,
+.signup-form-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Specific styles for the year dropdown */
+.year-dropdown {
+  background-color: white;
+  color: #555;
+  cursor: pointer;
+}
+
+/* Hover and focus styles for the dropdown */
+.year-dropdown:hover,
+.year-dropdown:focus {
+  border-color: #888;
+}
+
+/* Styles for the options within the dropdown */
+.year-dropdown option {
+  padding: 8px;
+}
+
+  @media (max-width: 600px) {
+    .signup-form-container input,
+    .signup-form-container select {
+      width: 100%;
+    }
+  }

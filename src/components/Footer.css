@@ -1,0 +1,100 @@
+/* Footer.css */
+.footer-wrapper {
+  background-color: #111; /* Dark background for better contrast */
+  color: #ddd; /* Lighter text color for legibility */
+  padding: 50px 80px; /* Generous padding for a spacious layout */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center; /* Vertically align content for better structure */
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 260px; /* Limiting width for better text readability */
+}
+
+.footer-logo {
+  width: 150px; /* Adjust logo size */
+  margin-bottom: 2rem;
+}
+
+.about p {
+  font-size: 0.85rem;
+  line-height: 1.6; /* Increased line height for readability */
+  margin-bottom: 1rem;
+  opacity: 0.8; /* Slightly transparent text for a subtle look */
+}
+
+.quick-links h5, .reach-out h5 {
+  font-size: 1.1rem;
+  color: #fff; /* Brighter color for headings */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e91e63; /* Underline effect for headings */
+  display: inline-block; /* Allows border to take the width of the text */
+  padding-bottom: 5px; /* Space between text and border */
+}
+
+.quick-links ul, .reach-out address {
+  font-size: 0.85rem;
+  margin-left: 0; /* Remove default list padding */
+}
+
+.quick-links ul li, .reach-out address {
+  line-height: 1.8; /* Space out list/address lines */
+  margin-bottom: 5px; /* Space between list items */
+}
+
+.quick-links ul li::before {
+  content: '• '; /* Add bullet points to list items */
+  color: #e91e63; /* Color for the bullet point */
+  font-weight: bold; /* Make bullet points bold */
+}
+
+.address {
+  font-style: normal; /* Address tag usually italicizes content; reset it */
+}
+
+/* Social media icons placeholder styling */
+.social-icons {
+  /* Use flexbox to align icons */
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between icons */
+}
+
+/* Placeholder for actual social media icons */
+.social-icons svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .footer-wrapper {
+    padding: 30px; /* Less padding on smaller screens */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section {
+    margin-bottom: 20px; /* Space between sections */
+  }
+
+  .quick-links, .reach-out {
+    order: -1; /* Move quick links and reach out to the top on mobile */
+  }
+
+  .social-icons {
+    margin-bottom: 20px; /* Space above icons when they move to the bottom */
+  }
+}

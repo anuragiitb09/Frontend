@@ -1,0 +1,154 @@
+.main-page {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .main-headline span {
+    opacity: 0;
+    display: inline-block;
+    animation: typeEffect 0.5s forwards;
+    color: aliceblue;
+  }
+  
+  @keyframes typeEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  
+  .buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 2rem; /* Maintain gap between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+    margin-bottom: 2rem;
+}
+
+  .button {
+    padding: 1.3rem 2rem; /* Adjust padding if needed */
+    width: 200px; /* Fixed width for each button */
+    border: none;
+    border-radius: 50px; /* Retain oval shape */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold; /* Make text more prominent */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); /* Subtle shadow for depth */
+    display: flex;
+    justify-content: center; /* Center text within button */
+    align-items: center; /* Align text vertically */
+    text-align: center;
+}
+
+.sign-offers {
+    background-image: linear-gradient(to right, #007BFF, #00BFFF); /* Blue gradient */
+}
+
+.login-coupons {
+    background-image: linear-gradient(to right, #FF416C, #FF4B2B); /* Red to orange gradient */
+}
+
+
+  /* Adding margin to the right of each button except the last one */
+.button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* Or, adding margin to the left of each button except the first one */
+.button:not(:first-child) {
+  margin-left: 1rem;
+}
+
+  .sticker {
+    position: absolute;
+    max-width: 100px; /* Adjust the size as needed */
+  }
+  
+  .sticker1 {
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    width: 250px;
+    height: auto;
+    z-index: 10; /* Ensures it's on top of other elements */
+}
+
+  
+@keyframes upAndDown {
+    0%, 100% {
+      top: 330px;
+    }
+    50% {
+      top: 370px;
+    }
+  }
+  
+  .sticker2 {
+      position: absolute;
+      top: 0px;
+      right: 50px;
+      width: 300px;
+      height: auto;
+      z-index: 10;
+      animation: upAndDown 5s ease-in-out infinite;
+  }
+
+.sticker3 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 250px;
+    height: auto;
+    z-index: 10; /* Ensures it's on top of other elements */
+   
+}
+.sticker4 {
+    position: absolute;
+    top: 20%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 250px; /* Set your width */
+    height: auto; /* Adjust height as necessary */
+    z-index: 10; /* Ensures it's on top of other elements */
+    transform: translate(-50%, -50%); /* Adjust for the element's dimensions */
+}
+
+ 
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .main-page {
+      height: auto;
+      padding: 50px 0;
+    }
+  
+    .main-headline {
+      font-size: 2rem;
+    }
+  
+    
+  
+    .sticker {
+      display: none; /* Hide stickers on smaller screens */
+    }
+    
+      .buttons {
+          flex-direction: column;
+          gap: 1rem; /* Adjust vertical gap for stacked buttons on small screens */
+      }
+      /* Optionally, adjust individual button margins if using the margin approach */
+      .button:not(:last-child) {
+          margin-right: 0; /* Remove right margin on smaller screens */
+          margin-bottom: 1rem; /* Add bottom margin for stacking */
+      }
+  }
+  
+  
+  

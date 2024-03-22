@@ -1,0 +1,101 @@
+/* src/components/CoordinatorComponent.css */
+.coordinator-component {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A more modern font */
+    color: #333; /* Darker text for better readability */
+    
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures nothing overflows the border radius */
+}
+
+.profile-and-greeting-section {
+    padding: 20px 0;
+}
+.edit-button-cordi{
+    padding: 20px 35px;
+    margin-bottom: 15%;
+    font-size: 20px; /* Larger font size for buttons */
+    border-radius: 50px; /* More rounded corners for buttons */
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    transition: background-color 0.3s;
+    margin-bottom: 10%;
+}
+.edit-button-cordi {
+    padding: 22px 37px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    transition: background-color 0.3s;
+    margin: 5% 2%; /* Adds 5% margin vertically and 2% horizontally */
+}
+
+
+.greeting-text {
+    margin: 10px 0 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 100; /* Ensure it sits above other content */
+    width: 90%;
+    max-width: 400px;
+}
+
+input[type="file"],
+input[type="text"] {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* A darker blue on hover */
+}
+
+.work-section {
+    padding: 20px;
+    background-color: #fff;
+   
+}
+
+.previous-works-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.work-item {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,130 @@
+.database-component {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+  .profile-and-greeting-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .form-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+  
+  .form-modal label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-modal input[type="text"],
+  .form-modal input[type="file"] {
+    
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .form-modal button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  
+  .profile-photo {
+    width: 200px; /* Larger profile image */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+  }
+  
+  .greeting-text {
+    font-size: 48px; /* Larger text size */
+    font-weight: bold;
+  }
+  
+  .graph-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px; /* More space between items */
+  }
+  
+  .graph-item {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .graph-image {
+    width: 150px; /* Larger image size */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .graph-name {
+    font-size: 24px; /* Larger font size for names */
+  }
+  
+  .coordinator-button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #ffc107; /* Bootstrap warning color for distinguishability */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .coordinator-button:hover {
+    opacity: 0.8;
+  }
+  
+  .button-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .database-button {
+    padding: 20px 35px;
+    font-size: 20px; /* Larger font size for buttons */
+    border-radius: 50px; /* More rounded corners for buttons */
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    transition: background-color 0.3s;
+  }
+  
+  .view-button-Dash {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .add-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .database-button:hover {
+    opacity: 0.8;
+  }
+  
